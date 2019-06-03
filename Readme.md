@@ -3,8 +3,7 @@
 
 * [MainWindow.xaml](./CS/PathEditorExample/MainWindow.xaml)
 * [MainWindow.xaml.cs](./CS/PathEditorExample/MainWindow.xaml.cs)
-* [PathEditor.cs](./CS/PathEditorExample/PathEditor.cs)
-* [PathEditorStyle.xaml](./CS/PathEditorExample/PathEditorStyle.xaml)
+
 <!-- default file list end -->
 # How to create a Breadcrumb Control
 
