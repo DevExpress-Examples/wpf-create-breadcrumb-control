@@ -9,7 +9,7 @@
 # How to create a Breadcrumb Control
 
 
-<p>This example demonstrates how to create a Breadcrumb Control based on a TextEdit. In the sample, the Breadcrumb Control consists of two layers: TextEdit and ItemsControl (which is invisible when TextEdit is focused).</p>
+<p>Startig with version 19.1, our WPF suite provides the BreadcrumbControl element. This example demonstrates how to use this control in a simple scenario.</p>
 
 <br/>
 
