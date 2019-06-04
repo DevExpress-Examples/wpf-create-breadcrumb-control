@@ -25,7 +25,7 @@ namespace PathEditorExample
         public MainViewModel() {
             Items = new ObservableCollection<Item>();
             for (int i = 0; i <= 20; i++)
-                Items.Add(new Item() { Name = "Name_" + i, Value = i, Header = "test" });
+                Items.Add(new Item() { Name = "Name_" + i, Value = i });
             for (int i = 0; i <= 20; i += 2)
                 Items[i].Children = new List<Child>() {
                     new Child() { Name = "Child_" + i },
