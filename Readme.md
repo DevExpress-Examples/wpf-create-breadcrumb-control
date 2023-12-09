@@ -3,18 +3,45 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E4179)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# Create a Breadcrumb Control for WPF
+
+The Breadcrumb control allows you to reproduce the Windows File Explorer UX. This example demonstrates how to create a [WPF Breadcrumb Control](https://docs.devexpress.com/WPF/DevExpress.Xpf.Controls.BreadcrumbControl) and bind it to `Item-Children` data relation.
+
+```xaml
+<dxco:BreadcrumbControl  ItemsSource="{Binding Items}" VerticalAlignment="Top"
+                          SelectedItemPath="{Binding Value, Mode=TwoWay}"
+                          DisplayMember="Name" ChildMember="Children"
+                          EmptyItemText="Selected root item"/>
+```
+```csharp
+public class Item : BindableBase {
+    public string Name {
+        get { return GetProperty(() => Name); }
+        set { SetProperty(() => Name, value); }
+    }
+    public int Value {
+        get { return GetProperty(() => Value); }
+        set { SetProperty(() => Value, value); }
+    }
+    public List<Child> Children {
+        get { return GetProperty(() => Children); }
+        set { SetProperty(() => Children, value); }
+    }
+}
+
+public class Child {
+    public string Name { get; internal set; }
+}
+```
+
+
+## Files to Review
 
 * [MainWindow.xaml](./CS/PathEditorExample/MainWindow.xaml)
 * [MainWindow.xaml.cs](./CS/PathEditorExample/MainWindow.xaml.cs)
 
-<!-- default file list end -->
-# How to create a Breadcrumb Control
 
+## Documentation
 
-<p>Startig with version 19.1, our WPF suite provides the BreadcrumbControl element. This example demonstrates how to use this control in a simple scenario.</p>
-
-<br/>
-
-
+* [WPF Navigation Controls](https://docs.devexpress.com/WPF/115593/controls-and-libraries/navigation-controls)
