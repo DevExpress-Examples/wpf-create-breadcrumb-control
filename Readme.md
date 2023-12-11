@@ -6,7 +6,7 @@
 
 # Create a Breadcrumb Control for WPF
 
-The Breadcrumb control allows you to reproduce the Windows File Explorer UX. This example demonstrates how to create a [WPF Breadcrumb Control](https://docs.devexpress.com/WPF/DevExpress.Xpf.Controls.BreadcrumbControl) and bind it to `Item-Children` data relation.
+The Breadcrumb control allows you to reproduce the Windows File Explorer UX. This example demonstrates how to create a [WPF Breadcrumb Control](https://docs.devexpress.com/WPF/DevExpress.Xpf.Controls.BreadcrumbControl) and bind it to the `Item-Children` data relation.
 
 ```xaml
 <dxco:BreadcrumbControl  ItemsSource="{Binding Items}" VerticalAlignment="Top"
